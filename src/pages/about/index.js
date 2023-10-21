@@ -1,20 +1,17 @@
 import { getPage } from "../../shared/lib/index.js";
+import { Header } from "../../widgets/header/header.js";
+import { Footer } from "../../widgets/footer/footer.js";
 
 export default () => {
+
     return getPage({
         title: "О нас",
-        body: `
-            <h1>О нас</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="/index.html">Главная</a>
-                    </li>
-                    <li>
-                        <a href="/about.html">О Нас</a>
-                    </li>
-                </ul>
-            </nav>
+        body: `         
+         <main class="main-container">
+            ${Header()}
+            <h1>Что-нибудь о нас</h1>
+         </main>
+         ${Footer()}
         `
     })
 }
