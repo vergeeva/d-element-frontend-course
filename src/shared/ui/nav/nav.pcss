@@ -2,17 +2,22 @@
 
     &__items{
         display: flex;
-        column-gap: 10px;
+        justify-items: center;
+        column-gap: 40px;
         list-style-type: none;
+        align-items: center;
     }
 
     &__link{
-        color: black;
         text-decoration: none;
         cursor: pointer;
-    }
-
-    &__link:hover{
-        color: #7070e5;
+        color: var(--neutrals-dark, #222);
+        font-family: Proxima Nova, serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 171.429% */
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
     }
 }

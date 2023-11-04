@@ -5,13 +5,13 @@ import { Footer } from "../../widgets/footer/footer.js";
 export default () => {
 
     return getPage({
-        title: "О нас",
-        body: `         
-         <main class="main-container">
-            ${Header()}
-            <h1>Что-нибудь о нас</h1>
-         </main>
-         ${Footer()}
+        title: "Каталог",
+        body: `
+        ${Header()}
+        <main class="main__container">
+        
+        </main>
+        ${Footer()}
         `
     })
 }

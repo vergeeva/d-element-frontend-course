@@ -1,7 +1,7 @@
 import { getPage } from "../../shared/lib/index.js";
-import { Button } from "../../shared/ui/button/button.js";
 import { Header } from "../../widgets/header/header.js";
 import { Footer } from "../../widgets/footer/footer.js";
+import {Card} from "../../shared/ui/slider/card/card.js";
 
 export default () => {
 
@@ -9,19 +9,19 @@ export default () => {
         title: "Главная",
         body: `
         ${Header()}
-        <main class="main-container">
-        <h1>Главная страница</h1>
-            ${Button({
-            label: "Нажми на меня!",
-            extraAttrs: {
-                "data-js-require": true,
-                "id": "btn"
-            },
-            extraClasses: {
-                isHidden: false,
-                isDisabled: false,
-            }
-            })}
+        <main class="main__container">
+        <h1>Популярные товары</h1>
+            ${
+            Card({
+                cardAttrs: {
+                    src: "/images/comp1.png",
+                    alt: "Frontend-разработчик",
+                    subtitle: "Бесплатный офлайн курс",
+                    title: "«Frontend-разработчик»"
+                }
+            })
+        }
+        
         </main>
         ${Footer()}
         `

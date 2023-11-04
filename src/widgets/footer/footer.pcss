@@ -1,0 +1,52 @@
+.footer{
+    padding: 0 112px;
+    margin-top: 24px;
+    font-family: "Proxima Nova", serif;
+
+    &__nav-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__agreement{
+        color: var(--neutrals-dark, #222);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 160% */
+        display: flex;
+        align-items: center;
+    }
+
+    &__decorative-line{
+        border: none;
+        margin-top: 24px;
+        margin-bottom: 32px;
+        height: 1px;
+        background: rgba(0, 0, 0, 0.30);
+    }
+
+    &__contacts{
+        display: flex;
+        column-gap: 56px;
+    }
+
+    &__address, &__email {
+        display: grid;
+        color: var(--neutrals-dark, #222);
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 160% */
+    }
+
+    &__address-title, &__email-title{
+        color: var(--neutrals-grey-dark, #888);
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .nav__items{
+        padding-left: 0;
+    }
+}

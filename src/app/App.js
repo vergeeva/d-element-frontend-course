@@ -1,12 +1,11 @@
-import "./style.pcss"
-import "../shared/ui/button/button.pcss";
-import "../widgets/header/header.pcss";
-import "../shared/ui/nav/nav.pcss";
 import HeaderModel from "../widgets/header/model/index.js";
+import FooterModel from "../widgets/footer/model/index.js";
 
 const runApp = async () => {
-    const runWidgets = () => {
-        new HeaderModel()
+    const runWidgets = async () => {
+        new HeaderModel();
+        new FooterModel();
+        await Promise.all(Object.keys(import.meta.glob("../**/*.pcss", {"query": "?inline"})).map(path => import(`${path}`).then((module) => module?.default ?? module)))
     }
     switch (process.env.NODE_ENV) {
         case "development":

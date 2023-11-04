@@ -6,7 +6,8 @@ export function Navigation(props)
         extraAttrs = {},
         baseClass = "nav",
         getCN,
-        navAttrs = {}
+        navAttrs = {},
+        children
     } = { ...commonComponentProps, ...props }
     const getClassName = (elem, mod) => getCN(baseClass, elem, mod);
 
@@ -19,11 +20,14 @@ export function Navigation(props)
                         </li>`
         }
     )
+    navItems += `<li class="${getClassName("item")}">
+                    ${children}
+                 </li>   `
 
     return `
             <nav class="${getClassName("", extraClasses)}" ${getAttrs(extraAttrs)}>
                 <ul class="${getClassName("items", extraClasses)}">
-                    ${navItems}              
+                    ${navItems}      
                 </ul>
             </nav>
     `
