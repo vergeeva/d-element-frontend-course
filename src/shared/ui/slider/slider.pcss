@@ -1,0 +1,35 @@
+.courses-slider
+{
+    position: relative;
+
+    &__cards-container{
+        display: flex;
+        column-gap: 32px;
+    }
+}
+.swiper-container
+{
+    position: unset;
+    //overflow: hidden;
+}
+
+.slider__left-arrow{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 132px;
+    right: 323px;
+    cursor: pointer;
+    border: none;
+    background: transparent url("/icons/left-arrow.svg") no-repeat;
+}
+.slider__right-arrow{
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 132px;
+    right: 224px;
+    cursor: pointer;
+    border: none;
+    background: transparent url("/icons/right_arrow.svg") no-repeat;
+}

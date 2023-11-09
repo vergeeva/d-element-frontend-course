@@ -1,0 +1,33 @@
+.filter{
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    &__accept-button{
+        border-radius: 100px;
+        padding: 12px 24px;
+        background: var(--accent-primary-light);
+        color: var(--accent-primary);
+        font-family: Proxima Nova, serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 155.556% */
+        border: none;
+        width: max-content;
+    }
+
+    &__accept-button:hover{
+        background: var(--accent-primary-dark);
+        color: var(--neutrals-white);
+        cursor: pointer;
+    }
+
+    &__active_filter{
+        background: var(--accent-primary);
+        color: var(--neutrals-white);
+    }
+}

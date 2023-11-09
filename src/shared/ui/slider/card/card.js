@@ -5,7 +5,7 @@ export function Card (props) {
     const { extraClasses = {}, extraAttrs = {}, baseClass = "card", getCN, cardAttrs } = { ...commonComponentProps, ...props }
     const getClassName = (elem, mod) => getCN(baseClass, elem, mod)
 
-    return `<div class="${getClassName("",  extraClasses)}" ${getAttrs(extraAttrs)}>
+    return `<div class="${getClassName("",  extraClasses)} swiper-slide" ${getAttrs(extraAttrs)}>
                 <div class="${getClassName("wrapper")}">
                     <div  class="${getClassName("image-wrapper")}">
                         <img class="${getClassName("image")}" src="${cardAttrs["src"]}" alt="${cardAttrs["alt"]}">
