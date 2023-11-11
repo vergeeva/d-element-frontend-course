@@ -1,0 +1,66 @@
+.totalCart{
+    font-family: Proxima Nova, serif;
+    color: var(--Dark);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+
+    &__wrapper{
+        padding: 56px;
+        border-radius: 25px;
+        background: linear-gradient(114deg, #F0F2F4 50.61%, #B5FF93 99.87%), #D9D9D9;
+    }
+    &__title{
+        color: var(--Dark);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+    }
+
+    &__values{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__price, &__final-price{
+        text-align: right;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+        padding-bottom: 24px;
+    }
+
+    &__final-price{
+        padding-bottom: 48px;
+    }
+
+    &__input-promo-code{
+        padding-bottom: 24px;
+    }
+    &__btn-container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn__label{
+        border-radius: 10px;
+        background: var(--accent-primary);
+        box-shadow: -3px 3px 15px 0 rgba(0, 0, 0, 0.25);
+        color: var(--neutrals-white, #FFF);
+        padding: 12px 24px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px; /* 150% */
+        text-decoration: none;
+        display: inline-flex;
+        column-gap: 10px;
+    }
+    .btn__label:hover{
+        background: var(--accent-primary-dark);
+        color: var(--neutrals-white);
+        cursor: pointer;
+    }
+}
