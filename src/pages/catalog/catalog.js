@@ -2,7 +2,7 @@ import { getPage } from "../../shared/lib/index.js";
 import { Header } from "../../widgets/header/header.js";
 import { Footer } from "../../widgets/footer/footer.js";
 import { Filter } from "../../widgets/filter/filter.js";
-import {Card} from "../../shared/ui/slider/card/card.js";
+import { Card } from "../../shared/ui/slider/card/card.js";
 
 export default () => {
     let filterItems = [

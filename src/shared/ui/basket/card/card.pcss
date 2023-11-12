@@ -1,0 +1,60 @@
+.basket-card{
+    font-family: Proxima Nova, serif;
+    color: var(--neutrals-dark);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 155.556% */
+    width: 960px;
+    position: relative;
+
+    &__wrapper{
+        border-radius: 12px;
+        background: var(--cards-bg-color);
+        display: flex;
+        column-gap: 32px;
+        padding: 20px;
+    }
+
+    &__image{
+        width: 188px;
+        height: 144px;
+        border-radius: 10px;
+    }
+
+    &__info-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subtitle{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+
+    &__title{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 116.667% */
+        padding-bottom: 20px;
+    }
+
+    &__reg-course, &__start-course{
+        color: #1C6CD5;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px; /* 145.455% */
+    }
+
+    .btn{
+        background: url("icons/close.svg") no-repeat;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 20px;
+    }
+}
