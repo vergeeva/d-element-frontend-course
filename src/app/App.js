@@ -13,7 +13,7 @@ const runApp = async () => {
         case "development":
             await import("../shared/api/mocks/browser.js")
                 .then(async ({ worker }) => {
-                    await worker.start().then(() => {
+                    await worker.start({ onUnhandledRequest: "bypass", }).then(() => {
                         console.debug("App dev run")
                         runWidgets()
                     })

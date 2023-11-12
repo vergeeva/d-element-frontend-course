@@ -1,9 +1,8 @@
 import { getPage } from "../../shared/lib/index.js";
 import { Header } from "../../widgets/header/header.js";
 import { Footer } from "../../widgets/footer/footer.js";
-import { BasketCard } from "../../shared/ui/basket/card/card.js";
-import {BasketCardsList} from "../../shared/ui/basket/cards_list/cards.js";
-import {TotalCart} from "../../shared/ui/basket/total-card/total.js";
+import { BasketCardsList } from "../../shared/ui/basket/cards_list/cards.js";
+import { TotalCart } from "../../shared/ui/basket/total-card/total.js";
 
 export default () => {
     let cardsBasket = [
